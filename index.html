@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WrapUp · מערכות הדמה</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Rubik:wght@700&display=swap">
+<style>
+  :root { --bg: #fbfaf5; --fg: #1b1b19; --muted: #6b6858; --line: #e3e0d3; --mark: #ffd84a; color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 "Heebo", "Segoe UI", Arial, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 56px max(16px, 4vw) 72px; display: grid; gap: 28px; }
+  h1 { margin: 0; font: 700 40px/1.1 "Rubik", "Heebo", Arial, sans-serif; }
+  h1 span { background: linear-gradient(transparent 58%, var(--mark) 58%, var(--mark) 92%, transparent 92%); padding-inline: 4px; }
+  p { margin: 0; max-width: 62ch; }
+  .muted { color: var(--muted); font-size: 14px; }
+  .sites { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .site { display: grid; gap: 8px; padding: 20px; border: 1px solid var(--line); border-radius: 14px; background: #fff; text-decoration: none; color: inherit; }
+  .site:hover { border-color: var(--fg); }
+  .site b { font-size: 20px; }
+  .swatch { width: 40px; height: 6px; border-radius: 3px; }
+  .go { font-weight: 500; text-decoration: underline; }
+  ol { margin: 0; padding-inline-start: 1.2em; display: grid; gap: 6px; }
+  code { background: #f0eee3; border-radius: 4px; padding: 0 5px; }
+</style>
+</head>
+<body>
+<main>
+  <div style="display:grid;gap:10px">
+    <h1><span>WrapUp</span></h1>
+    <p>שתי מערכות CRM בדיוניות של סוכנויות ביטוח, לצורך הדגמה. הן בנויות אחרת זו מזו: מבנה מסכים שונה, שמות שדות שונים ופורמטים שונים. כך אפשר להראות שאותו כלי עובד מול כל מערכת.</p>
+  </div>
+  <div class="sites">
+    <a class="site" href="ofek/"><span class="swatch" style="background:#0e5a61"></span><b>אופק</b><span class="muted">מערכת ניהול סוכנות קלאסית: לוח בקרה, לקוחות, תיק לקוח עם לשוניות, פוליסות, מסמכים, משימות, לידים ודוחות.</span><span class="go">פתיחת אופק</span></a>
+    <a class="site" href="nova/"><span class="swatch" style="background:#4f55cf"></span><b>Nova</b><span class="muted">CRM מודרני: אנשי קשר, משק בית, כיסויים, הזדמנויות, פעילויות ותובנות.</span><span class="go">פתיחת Nova</span></a>
+  </div>
+  <div style="display:grid;gap:10px">
+    <b>איך משתמשים</b>
+    <ol>
+      <li>נכנסים כסוכן. <b>אבי לוי</b> הוא הסוכן של הלקוחות שבתסריט ההדגמה (מיכל אברהם ושירן דהן).</li>
+      <li>כל שינוי נשמר בדפדפן שלכם בלבד, ולא בשרת.</li>
+      <li>כפתור <code>איפוס נתוני דמו</code> בראש כל מערכת מחזיר את הנתונים למצב ההתחלתי. מומלץ ללחוץ עליו לפני כל הצגה.</li>
+    </ol>
+  </div>
+  <p class="muted">כל האנשים, מספרי הטלפון, הפוליסות ושמות המבטחים במערכות האלה בדיוניים.</p>
+</main>
+</body>
+</html>
